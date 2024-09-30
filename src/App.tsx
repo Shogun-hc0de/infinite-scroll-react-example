@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import InfinityScroll from "./infinity-scroll/InfinityScroll"; // Import the InfinityScroll component
+import InfiniteScroll from "./infinite-scroll/InfiniteScroll"; // Import the InfiniteScroll component
 import { Post } from "./posts/posts.types"; // Import the Post type for type safety
 import PostItem from "./posts/PostItem"; // Import the PostItem component
 import Loader from "./loader/Loader"; // Import a Loader component for loading state
@@ -57,13 +57,13 @@ function App() {
     return (
         <div className="App">
             <div className="container">
-                <InfinityScroll fetchCallback={fetchPosts} hasMore={pageable.hasMore} loader={<Loader />}>
+                <InfiniteScroll fetchCallback={fetchPosts} hasMore={pageable.hasMore} loader={<Loader />}>
                     {/* Map over posts and render each PostItem */}
                     {pageable.posts.map((post: Post) => <PostItem key={post.id} {...post} />)}
-                </InfinityScroll>
+                </InfiniteScroll>
             </div>
         </div>
     );
 }
 
-export default App; // Export the App component
+export default App;

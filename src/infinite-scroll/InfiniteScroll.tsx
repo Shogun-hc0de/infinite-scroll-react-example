@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useIsOnScreen from './useIsOnScreen';
 
-// Define the props for the InfinityScroll component
+// Define the props for the InfiniteScroll component
 type Props = Omit<IntersectionObserverInit, 'root'> & {
     children?: React.ReactNode; // The child elements to render
     hasMore: boolean; // Flag to indicate if more items are available to load
@@ -9,7 +9,7 @@ type Props = Omit<IntersectionObserverInit, 'root'> & {
     loader?: React.ReactNode; // Optional loader element to display while fetching
 };
 
-const InfinityScroll = ({
+const InfiniteScroll = ({
                             rootMargin,
                             threshold,
                             children,
@@ -54,4 +54,4 @@ const InfinityScroll = ({
     );
 };
 
-export default InfinityScroll;
+export default InfiniteScroll;
