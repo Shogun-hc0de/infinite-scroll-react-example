@@ -1,0 +1,13 @@
+
+
+.post{
+    color:#ffffff;
+    padding: 0.5rem;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    margin: 0.25rem;
+    h2{
+        margin: 0;
+        font-size: 1.25em;
+    }
+}
